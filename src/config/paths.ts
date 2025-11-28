@@ -5,9 +5,9 @@ export const paths = {
   },
 
   app: {
-    dashboard: {
-      path: '/dashboard',
-      getHref: () => '/dashboard',
+    about: {
+      path: '/about',
+      getHref: () => '/about',
     },
     productDetail: {
       path: '/product/:id',
