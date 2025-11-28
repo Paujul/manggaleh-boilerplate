@@ -1,40 +1,41 @@
+import { HelpCircle } from 'lucide-react'
 import { Link } from 'react-router'
 
 import { paths } from '@/config/paths'
-import SvgMessageTextSquare02 from '../icons/MessageTextSquare02'
 
 function Navbar() {
   const links = [
     {
-      id: 2,
-      label: 'Products',
-      href: paths.app.dashboard.path,
+      id: 1,
+      label: 'About',
+      icon: <HelpCircle />,
+      href: '#',
     },
     {
-      id: 3,
-      label: 'About',
-      href: '#',
+      id: 2,
+      label: 'What I Do',
+      icon: <HelpCircle />,
+      href: paths.app.dashboard.path,
     },
   ]
 
   return (
-    <nav className='flex h-16 items-center bg-white'>
-      <div className='container mx-auto flex items-center justify-between'>
-        <Link to={paths.home.path}>
-          <h2 className='text-2xl font-bold'>Manggaleh Shop</h2>
-        </Link>
+    <nav className='flex h-16 items-center font-["Archivo",_sans-serif] mb-12'>
+      <h3 className='font-["Poppins",_sans-serif] text-2xl font-bold'>
+        @paujul
+      </h3>
 
-        <div className='flex items-center gap-5 text-sm font-medium'>
-          {links.map((item) => (
-            <Link
-              key={item.id}
-              className='flex items-center gap-1.5 px-2 py-1 hover:cursor-pointer'
-              to={item.href}
-            >
-             <SvgMessageTextSquare02 className='text-yellow-500 bg-black' fill='red'/> {item.label}
-            </Link>
-          ))}
-        </div>
+      <div className='ml-auto flex items-center gap-5 text-sm font-medium'>
+        {links.map((item) => (
+          <Link
+            key={item.id}
+            className='flex items-center gap-1.5 px-2 py-1 hover:cursor-pointer'
+            to={item.href}
+          >
+            {item.icon}
+            {item.label}
+          </Link>
+        ))}
       </div>
     </nav>
   )
