@@ -1,6 +1,7 @@
 import { Link } from 'react-router'
 
 import { paths } from '@/config/paths'
+import SvgMessageTextSquare02 from '../icons/MessageTextSquare02'
 
 function Navbar() {
   const links = [
@@ -30,7 +31,7 @@ function Navbar() {
               className='flex items-center gap-1.5 px-2 py-1 hover:cursor-pointer'
               to={item.href}
             >
-              {item.label}
+             <SvgMessageTextSquare02 className='text-yellow-500 bg-black' fill='red'/> {item.label}
             </Link>
           ))}
         </div>
