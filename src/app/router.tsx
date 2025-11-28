@@ -14,16 +14,16 @@ export const appRouter = createBrowserRouter([
       {
         index: true,
         lazy: async () => ({
-          Component: (await import('@/pages/product/home/ProductPage')).default,
+          Component: (await import('@/pages/home')).default,
         }),
       },
-      {
-        path: paths.app.productDetail.path,
-        lazy: async () => ({
-          Component: (await import('@/pages/product/detail/ProductDetail'))
-            .default,
-        }),
-      },
+      // {
+      //   path: paths.app.productDetail.path,
+      //   lazy: async () => ({
+      //     Component: (await import('@/pages/product/detail/ProductDetail'))
+      //       .default,
+      //   }),
+      // },
       {
         path: '*',
         Component: NotFound,
