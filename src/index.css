@@ -163,10 +163,6 @@
   .button {
     @apply rounded-lg border-2 border-gray-300 px-2 py-1.5 hover:cursor-pointer;
   }
-
-  /* .neu-shadow {
-    @apply drop-shadow-[6px_4px_0px_#000000]
-  } */
 }
 
 /* Services Page | "What I can do" */
@@ -181,7 +177,9 @@
   }
 
   .service-card {
-    @apply neu-shadow archivo flex flex-1 grow flex-col gap-3 rounded-2xl border-2 border-black bg-white px-4 py-6 transition select-none hover:drop-shadow-none;
+    font-family: 'Archivo', sans-serif;
+    filter: drop-shadow(6px 4px 0px #000000);
+    @apply flex flex-1 flex-col gap-3 rounded-2xl border-2 border-black bg-white px-4 py-6 transition select-none hover:drop-shadow-none;
   }
 }
 
@@ -190,6 +188,12 @@
     filter: drop-shadow(6px 4px 0px #000000);
   }
   .neu-shadow__small {
+    filter: drop-shadow(3px 2px 0px #000000);
+  }
+  .hover\:neu-shadow:hover {
+    filter: drop-shadow(6px 4px 0px #000000);
+  }
+  .hover\:neu-shadow__small:hover {
     filter: drop-shadow(3px 2px 0px #000000);
   }
 

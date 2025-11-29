@@ -11,7 +11,7 @@ function NotFound() {
         to='/'
         className='neu-shadow mt-2 block border-2 border-black bg-[#90EE90] p-3 font-semibold transition hover:drop-shadow-[3px_2px_0px_#000000] active:drop-shadow-none'
       >
-        Click me or my username
+        Go back
       </Link>
 
       <span className='absolute -top-3 right-5 -rotate-10 rounded-full bg-[#FF4911] px-2 font-medium text-white'>
