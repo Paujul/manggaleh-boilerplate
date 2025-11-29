@@ -163,4 +163,21 @@
   .button {
     @apply px-2 py-1.5 border-2 rounded-lg border-gray-300 hover:cursor-pointer;
   }
+
+  /* .neu-shadow {
+    @apply drop-shadow-[6px_4px_0px_#000000]
+  } */
+}
+
+
+@utility neu-shadow {
+    filter: drop-shadow(6px 4px 0px #000000)
+}
+
+@utility poppins {
+  font: 'Poppins', 'sans-serif';
+}
+
+@utility archivo {
+  font: 'Archivo', 'sans-serif'
 }

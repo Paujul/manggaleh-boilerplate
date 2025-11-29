@@ -9,6 +9,10 @@ export const paths = {
       path: '/about',
       getHref: () => '/about',
     },
+    myServices: {
+      path: '/services',
+      getHref: () => '/services',
+    },
     productDetail: {
       path: '/product/:id',
       getHref: (id: string | number) => `/product/${id}`,

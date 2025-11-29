@@ -15,7 +15,7 @@ function Navbar() {
       id: 2,
       label: 'What I Do',
       icon: <HelpCircle />,
-      href: '#',
+      href: paths.app.myServices.path,
     },
   ]
 

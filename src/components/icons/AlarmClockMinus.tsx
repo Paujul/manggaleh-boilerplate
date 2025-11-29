@@ -1,20 +1,20 @@
-import * as React from "react";
-import type { SVGProps } from "react";
+import * as React from 'react'
+import type { SVGProps } from 'react'
 const SvgAlarmClockMinus = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
+    xmlns='http://www.w3.org/2000/svg'
     width={24}
     height={24}
-    fill="none"
+    fill='none'
     {...props}
   >
     <path
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      stroke='currentColor'
+      strokeLinecap='round'
+      strokeLinejoin='round'
       strokeWidth={2}
-      d="M5 3 2 6m20 0-3-3M6 19l-2 2m14-2 2 2M9 13h6m-3 8a8 8 0 1 0 0-16.001A8 8 0 0 0 12 21"
+      d='M5 3 2 6m20 0-3-3M6 19l-2 2m14-2 2 2M9 13h6m-3 8a8 8 0 1 0 0-16.001A8 8 0 0 0 12 21'
     />
   </svg>
-);
-export default SvgAlarmClockMinus;
+)
+export default SvgAlarmClockMinus

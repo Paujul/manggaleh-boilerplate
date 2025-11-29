@@ -17,6 +17,12 @@ export const appRouter = createBrowserRouter([
           Component: (await import('@/pages/home')).default,
         }),
       },
+      {
+        path: paths.app.myServices.path,
+        lazy: async () => ({
+          Component: (await import('@/pages/my-services')).default,
+        }),
+      },
       // {
       //   path: paths.app.productDetail.path,
       //   lazy: async () => ({
