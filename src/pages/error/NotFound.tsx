@@ -2,11 +2,10 @@ import { Link } from 'react-router'
 
 function NotFound() {
   return (
-    <div className='neu-shadow mx-auto mb-12 w-[300px] rounded-xs border-[1.5px] border-black bg-inherit p-4 pb-6 font-["Archivo",_sans-serif]'>
+    <div className='neu-shadow archivo mx-auto mb-12 w-[300px] rounded-xs border-[1.5px] border-black bg-inherit p-4 pb-6'>
       <span className='poppins ml-auto font-bold'>Page not found</span>
       <p>
-        Not sure if you typed something on the URL or just testing out, I only
-        have 3 routes here :/
+        The page is either still in development or not found
       </p>
       <Link
         to='/'
@@ -15,7 +14,7 @@ function NotFound() {
         Click me or my username
       </Link>
 
-      <span className='absolute -top-3 right-5 -rotate-[10deg] rounded-full bg-[#FF4911] px-2 font-medium text-white'>
+      <span className='absolute -top-3 right-5 -rotate-10 rounded-full bg-[#FF4911] px-2 font-medium text-white'>
         ERROR!
       </span>
     </div>

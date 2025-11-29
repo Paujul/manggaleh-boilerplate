@@ -1,30 +1,29 @@
-import { HelpCircle } from 'lucide-react'
 import { Link } from 'react-router'
 
 import { paths } from '@/config/paths'
+import SvgBuilding05 from '../icons/Building05'
+import SvgMessageQuestionCircle from '../icons/MessageQuestionCircle'
 
 function Navbar() {
   const links = [
     {
       id: 1,
       label: 'About',
-      icon: <HelpCircle />,
+      icon: <SvgMessageQuestionCircle />,
       href: paths.app.about.path,
     },
     {
       id: 2,
       label: 'What I Do',
-      icon: <HelpCircle />,
+      icon: <SvgBuilding05 />,
       href: paths.app.myServices.path,
     },
   ]
 
   return (
-    <nav className='mb-12 flex h-16 items-center font-["Archivo",_sans-serif]'>
+    <nav className='archivo mb-12 flex h-16 items-center'>
       <Link to='/'>
-        <h3 className='font-["Poppins",_sans-serif] text-2xl font-bold'>
-          @paujul
-        </h3>
+        <h3 className='poppins text-2xl font-bold'>@paujul</h3>
       </Link>
 
       <div className='ml-auto flex items-center gap-5 text-sm font-medium'>

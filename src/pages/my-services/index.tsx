@@ -25,8 +25,8 @@ function MyServices() {
     },
   ]
   return (
-    <section className='flex flex-col gap-14'>
-      <h2 className='text-center font-["Archivo",_sans-serif] text-4xl font-extrabold'>
+    <section className='service-page'>
+      <h2 className='archivo text-center text-4xl font-extrabold'>
         What I can do
       </h2>
 
